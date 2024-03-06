@@ -46,8 +46,8 @@ class User(models.Model):
     date_of_birth = models.DateField(
         validators=[custom_validators.validate_is_older_than_thirteen])
     gender = models.CharField(max_length=20, choices=gender_choices)
-    profile_picture = models.ImageField(null=True, blank= True,upload_to='images/' , default='/home/venkatalakshmi/FacebookFinal/facebook/static/images/user.png')
-    cover_picture = models.ImageField(null=True, blank= True,upload_to='images/' , default='/home/venkatalakshmi/FacebookFinal/facebook/static/images/white.jpg')
+    profile_picture = models.ImageField(null=True, blank= True,upload_to='images/' , default='./static/images/user.png')
+    cover_picture = models.ImageField(null=True, blank= True,upload_to='images/' , default='./static/images/white.jpg')
 
 class Friendship(models.Model):
     friendship_id = models.AutoField(primary_key=True)
