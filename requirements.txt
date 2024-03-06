@@ -4,7 +4,6 @@ django-debug-toolbar==4.3.0
 django-filter==23.5
 django-phonenumber-field==7.3.0
 djangorestframework==3.14.0
-language-selector==0.1
 phonenumberslite==8.13.30
 Pillow==9.0.1
 sqlparse==0.4.2
